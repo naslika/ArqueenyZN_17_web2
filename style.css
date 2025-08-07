@@ -1,0 +1,27 @@
+:root{
+  --primary: #ffffff;
+  --secondary: #8b2727;
+  --border-radius: 5px;
+  --font: 'Arial, sans-serif';
+}
+
+
+body {
+  font-family: var(--font);
+  background-color: var(--primary);
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 7%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
