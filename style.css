@@ -1,27 +1,55 @@
 :root{
-  --primary: #ffffff;
-  --secondary: #8b2727;
-  --border-radius: 5px;
-  --font: 'Arial, sans-serif';
+    --primary: #1b1919;
+    --secondary: #8b2727;
+    --accent: #f0c040;
+    --warna: #f3f3f3;
+    --border-radius: 5px;
+    --font: 'Arial, sans-serif';
 }
 
 
 body {
-  font-family: var(--font);
-  background-color: var(--primary);
+    font-family: var(--font);
+    background-color: var(--primary);
 
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.4rem 7%;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid #513c28;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 7%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #513c28;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.nav-logo span {
+    color: var(--warna);
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-item {
+    font-size: 1.2rem;
+    color: var(--warna);
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    text-decoration: underline;
+    color: var(--accent);
 }
